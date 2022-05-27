@@ -66,7 +66,7 @@ $ git commit -m "commit-message"
 ---
 ### 推送
 ```
-git push
+$ git push
 ```
 
 ### 分支
@@ -82,7 +82,7 @@ $ git branch {branch-name}
 $ git checkout {branch-name}
 
 將分支合併
-$ git merge {branch-name}
+$ git merge {branch-name 要合併的分支名稱}
 ```
 
 ### git pull
@@ -93,6 +93,13 @@ git pull
 
 git [-C <path>] pull
 ```
+### conflict 衝突
+
+### git rebase
+
+### pull request
+
+
 ### git fetch
 ```
 ```
@@ -100,3 +107,5 @@ git [-C <path>] pull
 ```
 ```
 ### git switch
+
+
