@@ -45,7 +45,7 @@ $ git clone git@github.com:YOUR-USERNAME/YOUR-REPOSITORY
 ```
 $ git status
 
-歷史紀錄
+檢視提交紀錄
 $ git log 
 ```
 ---
@@ -54,14 +54,19 @@ $ git log
 stage
 
 ```
+增加檔案至暫存區
 $ git add {filename}
+
+增加全部檔案至暫存區
+$ git add .
+
 ```
 
 ### 新增檔案至分支(repository)
 ```
 $ git commit -m "commit-message"
 ```
-若只輸入`git commit`則將開啟編輯器，git會請你輸入提交信息
+若只輸入`git commit`則將開啟編輯器，git會要求輸入提交信息
 
 ---
 ### 推送
@@ -70,6 +75,8 @@ $ git push
 ```
 
 ### 分支
+
+應隨時注意自已目前在哪個分支，預設主分支通常為main (原為master，因政治因素修正)
 
 ```
 查看目前分支
@@ -108,4 +115,13 @@ git [-C <path>] pull
 ```
 ### git switch
 
+
+## github flow 協作模式
+
+### 將既有專案與 github 上的 repo 連結
+```
+$ git remote add origin {github}/{local Directory Name.git}
+
+$ git branch -M main
+```
 
